@@ -1,3 +1,26 @@
+# UIKit Arpyia :)
+
+Para adicionar novos ícones, adicione seu **svg** no diretório `custom/icons`, como exemplo abaixo:
+
+```svg
+<svg width="20" height="20" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M13 14H11V9H13M13 18H11V16H13M1 21H23L12 2L1 21Z" />
+</svg>
+```
+
+> Matenha o **width**, **height** e **viewBox** como no exemplo acima
+
+Após adicionar, execute o comando `npm run compile` (tenha certeza de ter executado `npm i` antes).
+
+O output será gerado no diretório `dist`. Os arquivos que precisam ser copiados são:
+
+- css/uikit-rtl.min.css
+- css/uikit.min.css
+- js/uikit-icons.min.js
+- js/uikit.min.js
+
+---
+
 [![uikit banner](https://cloud.githubusercontent.com/assets/321047/21769911/474d7d9e-d681-11e6-9fe0-d95f8ccfd3a9.jpg)](https://getuikit.com/)
 
 # UIkit
