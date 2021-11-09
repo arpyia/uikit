@@ -144,6 +144,9 @@ export default {
                     data,
                     method: this.method,
                     responseType: this.type,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
                     beforeSend: env => {
 
                         const {xhr} = env;
