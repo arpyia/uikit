@@ -19,7 +19,7 @@ O output será gerado no diretório `dist`. Os arquivos que precisam ser copiado
 - js/uikit-icons.min.js
 - js/uikit.min.js
 
-> Fontes de ícones: [Material Icons](https://materialdesignicons.com); [Tabler Icons](https://github.com/tabler/tabler-icons);
+> Fontes de ícones: [Material Icons](https://materialdesignicons.com); [Tabler Icons](https://tabler-icons.io);
 
 ---
 
