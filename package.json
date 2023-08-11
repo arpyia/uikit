@@ -61,5 +61,8 @@
       "patterns": "**/*.less",
       "extensions": "less"
     }
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
   }
 }
