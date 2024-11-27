@@ -1381,10 +1381,10 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
-function-bind@^1.1.1, function-bind@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
-  integrity sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==
+function-bind@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
+  integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
 function.prototype.name@^1.1.5:
   version "1.1.5"
@@ -1749,12 +1749,19 @@ internal-slot@^1.0.5:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-is-accessor-descriptor@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/is-accessor-descriptor/-/is-accessor-descriptor-1.0.1.tgz"
-  integrity sha512-YBUanLI8Yoihw923YeFUS5fs0fF2f5TSFTNiYAAzhhDscDa3lEqYuz1pDOEP5KvX94I9ey3vsqjJcLVFVU+3QA==
+is-accessor-descriptor@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.npmjs.org/is-accessor-descriptor/-/is-accessor-descriptor-0.1.6.tgz"
+  integrity sha512-e1BM1qnDbMRG3ll2U9dSK0UMHuWOs3pY3AtcFsmvwPtKL3MML/Q86i+GilLfvqEs4GW+ExB91tQ3Ig9noDIZ+A==
   dependencies:
     hasown "^2.0.0"
+
+is-array-buffer@^3.0.1, is-array-buffer@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/is-array-buffer/-/is-array-buffer-3.0.2.tgz"
+  integrity sha512-y+FyyR/w8vfIRq4eQcM1EYgSTnmHXPqaF+IgzgraytCFq5Xh8lllDVmAZolPJiZttZLeFSINPYMaEJ7/vWUa1w==
+  dependencies:
+    kind-of "^6.0.0"
 
 is-array-buffer@^3.0.1, is-array-buffer@^3.0.2:
   version "3.0.2"
@@ -1804,10 +1811,10 @@ is-ci@^1.0.10:
   dependencies:
     ci-info "^1.5.0"
 
-is-data-descriptor@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/is-data-descriptor/-/is-data-descriptor-1.0.1.tgz"
-  integrity sha512-bc4NlCDiCr28U4aEsQ3Qs2491gVq4V8G7MQyws968ImqjKuYtTJXrl7Vq7jsN7Ly/C3xj5KWFrY7sHNeDkAzXw==
+is-data-descriptor@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.npmjs.org/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz"
+  integrity sha512-+w9D5ulSoBNlmw9OHn3U2v51SyoCd0he+bB3xMl62oijhrspxowjU+AIcDY0N3iEJbUEkB15IlMASQsxYigvXg==
   dependencies:
     hasown "^2.0.0"
 
@@ -1823,16 +1830,18 @@ is-descriptor@^0.1.0:
   resolved "https://registry.npmjs.org/is-descriptor/-/is-descriptor-0.1.7.tgz"
   integrity sha512-C3grZTvObeN1xud4cRWl366OMXZTj0+HGyk4hvfpx4ZHt1Pb60ANSXqCK7pdOTeUQpRzECBSTphqvD7U+l22Eg==
   dependencies:
-    is-accessor-descriptor "^1.0.1"
-    is-data-descriptor "^1.0.1"
+    is-accessor-descriptor "^0.1.6"
+    is-data-descriptor "^0.1.4"
+    kind-of "^5.0.0"
 
 is-descriptor@^1.0.0, is-descriptor@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/is-descriptor/-/is-descriptor-1.0.3.tgz"
-  integrity sha512-JCNNGbwWZEVaSPtS45mdtrneRWJFp07LLmykxeFV5F6oBvNF8vHSfJuJgoT472pSfk+Mf8VnlrspaFBHWM8JAw==
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/is-descriptor/-/is-descriptor-1.0.2.tgz"
+  integrity sha512-2eis5WqQGV7peooDyLmNEPUrps9+SXX5c9pL3xEB+4e9HnGuDa7mB7kHxHw4CbqS9k1T2hOH3miL8n8WtiYVtg==
   dependencies:
-    is-accessor-descriptor "^1.0.1"
-    is-data-descriptor "^1.0.1"
+    is-accessor-descriptor "^1.0.0"
+    is-data-descriptor "^1.0.0"
+    kind-of "^6.0.2"
 
 is-extendable@^0.1.0, is-extendable@^0.1.1:
   version "0.1.1"
@@ -2116,6 +2125,16 @@ kind-of@^4.0.0:
   integrity sha512-24XsCxmEbRwEDbz/qz3stgin8TTzZ1ESR56OMCN0ujYg+vRutNSiOj9bHH9u85DKgXguraugV5sFuvbD4FW/hw==
   dependencies:
     is-buffer "^1.1.5"
+
+kind-of@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-5.1.0.tgz"
+  integrity sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw==
+
+kind-of@^6.0.0:
+  version "6.0.3"
+  resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"
+  integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
 kind-of@^6.0.2:
   version "6.0.3"
@@ -2402,6 +2421,13 @@ nodemon@^1.12.1:
     undefsafe "^2.0.2"
     update-notifier "^2.5.0"
 
+nopt@~1.0.10:
+  version "1.0.10"
+  resolved "https://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz"
+  integrity sha512-NWmpvLSqUrgrAC9HCuxEvb+PSloHpqVu+FqcO4eeF2h5qYRhA7ev6KvelyQAKtegUbC6RypJnlEOhd8vloNKYg==
+  dependencies:
+    abbrev "1"
+
 normalize-path@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/normalize-path/-/normalize-path-2.1.1.tgz"
@@ -2424,7 +2450,7 @@ npm-run-path@^2.0.0:
 "npm-watch@github:dasdeck/npm-watch#46a8a36c61cfd998ed53d27f62eaf79e11c395b4":
   version "0.3.0"
   resolved "git+ssh://git@github.com/dasdeck/npm-watch.git#46a8a36c61cfd998ed53d27f62eaf79e11c395b4"
-  integrity sha512-WVc0YonoLDSyBuNwKpUtfdJtliy9O7qPH3qkZdA2qU0DAcrCpkxp9yL8BdgPoDixICAOHmDq0HKefeav5O4fEQ==
+  integrity sha512-709kvWK5eLkdE8XoMRRcjySdxtkHwyeSxNiSj5N/G/YaJv7CJYjvDypkYHnVdteQVU4CZ4MB848BjsQbwCTYfg==
   dependencies:
     minimist "^1.2.0"
     nodemon "^1.12.1"
